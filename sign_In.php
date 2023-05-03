@@ -30,13 +30,14 @@
 
         if (isset($_GET["error"])) {
             if ($_GET["error"] == "emptyInput") {
-                echo "Please input the correct Username/Email or Password!";
+                echo "<center>Please input all the fields!</center>";
             }
             else if ($_GET["error"] == "wrongSignIn") {
                 echo "Incorrect Sign In!";
             }
         }
         ?>
+        <br><br>
         <label>First Name:</label>
         <input type="text" name="uName" placeholder="Username/Email">
 
