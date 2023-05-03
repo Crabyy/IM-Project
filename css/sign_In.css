@@ -50,6 +50,7 @@ button {
 }
 button:hover{
     opacity: .5;
+    cursor:pointer;
 }
 .account{
     margin-top: 50px;
