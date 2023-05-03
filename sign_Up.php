@@ -52,23 +52,23 @@
 
     <form method="post" action="sign_Up.inc.php">
 
+        <label>First Name:</label>
         <input type="text" id="firstname" name="fName" placeholder="First Name">
-        <br>
 
+        <label>Last Name:</label>
         <input type="text" id="lastname" name="lName" placeholder="Last Name">
-        <br>
-
+        
+        <label>Username:</label>
         <input type="text" id="username" name="username" placeholder="Username">
-        <br>
 
+        <label>Email:</label>
         <input type="email" id="email" name="email" placeholder="Email">
-        <br>
 
+        <label>Password:</label>
         <input type="password" id="password" name="pwd" placeholder="Password">
-        <br>
 
+        <label>Confirm Password:</label>
         <input type="password" id="confirm-password" name="Cpwd" placeholder="Confirm Password">
-        <br>
 
         <button type="submit" name="submit">Submit</button>
     </form>

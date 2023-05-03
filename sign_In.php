@@ -37,9 +37,10 @@
             }
         }
         ?>
-
+        <label>First Name:</label>
         <input type="text" name="uName" placeholder="Username/Email">
 
+        <label>Password:</label>
         <input type="password" name="pwd" placeholder="Password">
         <br>
 
