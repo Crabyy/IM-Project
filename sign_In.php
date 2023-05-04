@@ -20,7 +20,7 @@
 
 <body>
 
-    <?php include 'navbar.php'; ?>
+    
 
     <form action="sign_In.inc.php" method="post">
 
@@ -33,19 +33,19 @@
                 echo "<center>Please input all the fields!</center>";
             }
             else if ($_GET["error"] == "wrongSignIn") {
-                echo "Incorrect Sign In!";
+                echo "<center>Incorrect Sign In!</center>";
             }
         }
         ?>
         <br><br>
-        <label>First Name:</label>
+        <label>Username:</label>
         <input type="text" name="uName" placeholder="Username/Email">
 
         <label>Password:</label>
         <input type="password" name="pwd" placeholder="Password">
         <br>
 
-        <button type="submit" name="submit">Login</button>
+        <button type="submit" name="submit">Sign In</button>
 
         <h2 class="account"> Don't have an account?</h2>
         <a href="sign_Up.php">Sign Up now!</a>

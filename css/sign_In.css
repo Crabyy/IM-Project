@@ -1,5 +1,5 @@
 body {
-    background: white;
+    background: whitesmoke;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,13 +9,14 @@ body {
 *{
     font-family: 'Poppins', sans-serif;
     margin-top: -8px;
+    
 }
 form {
     width: 300px;
     padding: 20px;
     background: whitesmoke;
     border-radius: 25px;
-    box-shadow: 0 0 20px gray;
+    box-shadow: 0 0 20px rgb(124, 126, 126);
     font-family: 'Poppins', sans-serif;
 }
 h2 {
@@ -35,6 +36,9 @@ label {
     color: #000000;
     font-size: 18px;
     padding: 10px;
+    
+
+    
 
 }
 button {
@@ -43,13 +47,14 @@ button {
     color: #fff;
     border-radius: 5px;
     border: none;
-    margin-left: 115px;
+    margin-left: 104px;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    letter-spacing: .10em;
 }
 button:hover{
-    opacity: .5;
+    opacity: 0.90;
     cursor:pointer;
 }
 .account{
@@ -65,10 +70,16 @@ form a{
     margin-left: 105px;
     font-size: small;
     padding: 0 0 100px 0;
-    text-decoration: none;
     font-weight: bold;
 }
+form a:link{
+    color:rgb(85, 7, 230);
+    text-decoration:none;
+}
+form a:visited{
+    color:rgb(85, 7, 230);
+    text-decoration:none;
+}
 form a:hover{
-    opacity: .5;
-    cursor:pointer;
+    text-decoration:underline;
 }

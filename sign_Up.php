@@ -20,31 +20,31 @@
 
 <div class="container">
 
-    <h1>Sign Up</h1>
+    <h2>Sign Up</h2>
 
     <?php
 
     if(isset($_GET["error"])){
         if($_GET["error"] == "emptyInput") {
-            echo "<p>Please fill up all fields!</p>";
+            echo "<center><p>Please fill up all fields!</p></center>";
         }
         else if($_GET["error"] == "invalidUsername"){
-            echo "<p>Please use a proper username!</p>";
+            echo "<center><p>Please use a proper username!</p></center>";
         }
         else if($_GET["error"] == "invalidEmail"){
-            echo "<p>Please use a proper Email!</p>";
+            echo "<center><p>Please use a proper Email!</p></center>";
         }
         else if($_GET["error"] == "passwordDoesNotMatch"){
-            echo "<p>Both passwords don't match!</p>";
+            echo "<center><p>Both passwords don't match!</p></center>";
         }
         else if($_GET["error"] == "stmtError"){
-            echo "<p>Something went wrong!</p>";
+            echo "<center><p>Something went wrong!</p></center>";
         }
-        else if($_GET["error"] == "usernameTaken"){
-            echo "<p>This username is already taken!</p>";
+        else if($_GET["error"] == "usernameExists"){
+            echo "<center><p>This username/email is already taken!</p></center>";
         }
         else if($_GET["error"] == "none"){
-            echo "<p>Congratulations! You successfully signed up, Welcome!</p>";
+            echo "<center><p>Congratulations! You successfully signed up, Welcome!</p></center>";
         }
 
     }
@@ -53,22 +53,22 @@
     <form method="post" action="sign_Up.inc.php">
 
         <label>First Name:</label>
-        <input type="text" id="firstname" name="fName" placeholder="First Name">
+        <input type="text" id="firstname" name="fName">
 
         <label>Last Name:</label>
-        <input type="text" id="lastname" name="lName" placeholder="Last Name">
+        <input type="text" id="lastname" name="lName">
         
         <label>Username:</label>
-        <input type="text" id="username" name="username" placeholder="Username">
+        <input type="text" id="username" name="username">
 
         <label>Email:</label>
-        <input type="email" id="email" name="email" placeholder="Email">
+        <input type="email" id="email" name="email">
 
         <label>Password:</label>
-        <input type="password" id="password" name="pwd" placeholder="Password">
+        <input type="password" id="password" name="pwd">
 
         <label>Confirm Password:</label>
-        <input type="password" id="confirm-password" name="Cpwd" placeholder="Confirm Password">
+        <input type="password" id="confirm-password" name="Cpwd">
 
         <button type="submit" name="submit">Submit</button>
     </form>

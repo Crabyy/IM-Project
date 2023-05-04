@@ -1,5 +1,6 @@
 *{
   font-family: 'Poppins', sans-serif;
+
 }
 
 .container {
@@ -13,12 +14,13 @@
     box-shadow: 0 0 20px gray;  
   }
   
-  h1 {
+  h2 {
     text-align: center;
     font-size: 60px;
-    margin-top:10px;
-    margin-bottom: 40px;
+    margin-top:15px;
+    margin-bottom: 30px;
     font-family: 'Poppins', sans-serif;
+  
 
   }
   
@@ -29,29 +31,36 @@
   
   label {
     font-size: 18px;
-    margin-bottom: 5px;
+    padding: 10px;
+    margin-bottom: -10px
+    
   }
   
   input {
-    padding: 10px;
+    padding: 8px;
     font-size: 18px;
     border: 1px solid #ccc;
     border-radius: 15px;
     margin-bottom: 10px;
+    
   }
   
   button {
-    padding: 10px;
+    padding:8px;
+    width: 150px;
+    margin-left: 68px;
     font-size: 18px;
     background-color: #0f0f0f;
-    color: white;
+    color: rgb(231, 231, 231);
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
+    letter-spacing: .10em;
     
   }
   
   button:hover {
-    background-color: #494b49;
+    opacity: .90;
+    cursor: pointer;
   }
